@@ -1,0 +1,45 @@
+.container-from {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+}
+
+form {
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px; /* Máximo ancho del formulario */
+}
+
+.input-form {
+  width: 100%; /* Hace que los inputs ocupen todo el ancho disponible */
+  padding: 10px;
+  margin: 10px 0; /* Espaciado arriba y abajo para separar los elementos del formulario */
+  border: 1px solid #ccc; /* Borde sutil */
+  border-radius: 4px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluye el padding y border en el ancho total del elemento */
+}
+
+/* El textarea utiliza la misma clase que los inputs para mantener la consistencia */
+.input-form[type="submit"] {
+  background-color: #007bff; /* Un color azul para el botón de envío */
+  color: white; /* Texto blanco para el botón */
+  font-weight: bold;
+  cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+  transition: background-color 0.2s; /* Transición suave al cambiar de color */
+}
+
+.input-form[type="submit"]:hover {
+  background-color: #0056b3; /* Color ligeramente más oscuro al pasar el cursor */
+}
+
+/* Estilos para las etiquetas */
+label {
+  display: block; /* Hace que cada etiqueta tenga su propia línea */
+  margin-top: 20px; /* Espaciado superior para separar cada campo */
+  font-weight: bold; /* Texto en negrita para las etiquetas */
+}
+.textarea.input-form { /* Añade una clase adicional o identificador si necesario para el textarea */
+  resize: none; /* Impide que el usuario cambie el tamaño del textarea */
+}

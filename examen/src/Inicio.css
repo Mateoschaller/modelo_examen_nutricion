@@ -1,0 +1,17 @@
+.inicio-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.btnbtnbtn {
+  padding: 5px 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+

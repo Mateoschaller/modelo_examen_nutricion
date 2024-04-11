@@ -1,0 +1,173 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+  background-color: #fcfcfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body, html{
+  background-color: #f9fafb;
+  background-image: linear-gradient(#e5e7eb 1px,#0000 0),linear-gradient(90deg,#e5e7eb 1px,#0000 0);
+  background-size: 100px 100px;
+}
+
+.app {
+  background-color: #252d4a;
+  min-width: 500px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* PREGUNTAS */
+.lado-izquierdo {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pregunta-numero {
+  margin-bottom: 20px;
+}
+
+.pregunta-numero span {
+  font-size: 28px;
+}
+
+.pregunta-titulo {
+  margin-bottom: 12px;
+}
+
+.lado-derecho {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* FINALIZADO */
+.juego-terminado {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 24px;
+  align-items: center;
+}
+
+/* GRAL */
+button {
+  margin: 5px;
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #234668;
+  cursor: pointer;
+}
+
+a {
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.bbb{
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #234668;
+  cursor: pointer;
+}
+
+
+.tiempo-restante {
+  font-size: 14px;
+  color: #fcbf3d;
+  margin-bottom: 20px;
+}
+
+.correct,
+.correct:hover {
+  background-color: #2f922f;
+}
+
+.incorrect,
+.incorrect:hover {
+  background-color: #ff3333;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button:hover {
+  background-color: #234668;
+}
+
+button[disabled] {
+  background-color: #555e7d;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
+}
+@media (max-width: 600px) {
+  .app {
+    min-width: 0; /* Se elimina el ancho mínimo para permitir que el contenedor se adapte a pantallas más pequeñas */
+    width: 90%; /* Se aumenta el ancho para utilizar más espacio disponible en pantallas pequeñas */
+    flex-direction: column; /* Cambia la disposición a vertical */
+  }
+
+  .lado-izquierdo, .lado-derecho {
+    width: 100%; /* Ajusta el ancho de estos elementos al del contenedor */
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    font-size: 14px; /* Se ajusta el tamaño de fuente para una mejor legibilidad en pantallas pequeñas */
+    padding: 10px; /* Aumenta el padding para un mejor toque en pantallas táctiles */
+  }
+
+  .pregunta-numero span, .tiempo-restante, .juego-terminado {
+    font-size: 20px; /* Aumenta el tamaño de la fuente para mejorar la legibilidad */
+  }
+}

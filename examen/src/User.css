@@ -1,0 +1,22 @@
+.container {
+  width: 50%;
+  position: fixed; /* Posicionamiento fijo */
+  top: 0; /* Arriba del todo */
+  left: 0; /* Alineado a la izquierda */
+  right: 0; /* Alineado a la izquierda */
+  background-color: #fff; /* Fondo blanco o el color que prefieras */
+  z-index: 1000; /* Asegura que se muestre por encima de otros elementos */
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  padding: 10px 0; /* Espaciado arriba y abajo */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boton {
+  margin: 0 10px; /* Espacio entre botones */
+  /* Otros estilos para tus botones */
+  
+  text-align: center;
+}
